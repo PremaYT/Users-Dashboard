@@ -1,0 +1,7 @@
+th{
+    text-align: center !important;
+}
+
+td, th{
+    border: 1px solid #ccc !important;
+}
