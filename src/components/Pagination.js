@@ -24,19 +24,19 @@ function Pagination(props) {
             <div className="col-md-6">
                 <nav>
                     <ul className="pagination">
-                        <li className="page-item" >
+                        <li className="page-item"  data-toggle="tab">
                             <a className="page-link" href="#" aria-label="Previous" onClick={() => prevPage()} id="prevPage">
                                 <span aria-hidden="true">&laquo;</span>
                             </a>
                         </li>
                         {
                             pageNumbers.map(number => (
-                                <li key={number} className="page-item" >
+                                <li key={number} className="page-item"  data-toggle="tab">
                                     <a href="#" onClick={() => {paginate(number)}} className="page-link" id="nextPage">{number}</a>
                                 </li>
                             ))
                         }
-                        <li className="page-item">
+                        <li className="page-item"  data-toggle="tab">
                             <a className="page-link" href="#" aria-label="Next" onClick={() => nextPage(pageNumbers.length)}>
                                 <span aria-hidden="true">&raquo;</span>
                             </a>
