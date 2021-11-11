@@ -5,6 +5,10 @@ import { useSelector } from 'react-redux'
 import UsersList from './components/UsersList'
 import Pagination from './components/Pagination'
 import UserDetails from './components/UserDetails'
+import UseRefExample from './components/UseRefExample'
+import QRCodereader from './components/QRCodereader'
+
+import FileUpload from './components/FileUpload'
 
 function App() {
   const {users} = useSelector(state => state)
@@ -25,7 +29,7 @@ function App() {
 
   return (
     <div className="container mt-s">
-        <Route path="/" render={(props) => {
+        {/* <Route path="/" render={(props) => {
               return <UsersList 
               {...props} 
               usersPerPage={usersPerPage}
@@ -39,10 +43,11 @@ function App() {
               />
           }} exact />
         <Route path="/users/:id" component={UserDetails} />
-
+ */}
         
-          
-          
+    {/* <FileUpload />       */}
+    {/* <UseRefExample /> */}
+    <QRCodereader />
     </div>
   );
 }
