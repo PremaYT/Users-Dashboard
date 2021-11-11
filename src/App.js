@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
+import React from 'react'
 // import { Route } from 'react-router-dom'
-import { useSelector } from 'react-redux'
+// import { useSelector } from 'react-redux'
 
 // import UsersList from './components/UsersList'
 // import Pagination from './components/Pagination'
