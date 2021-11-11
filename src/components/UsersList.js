@@ -1,5 +1,4 @@
 import React from 'react'
-import { useSelector } from 'react-redux'
 import { Table } from 'react-bootstrap'
 
 import UserItem from './UserItem'

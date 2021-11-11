@@ -9,7 +9,7 @@ const UserDetails = (props) => {
     const [user, setUser] = useState({})
     
     useEffect(() => {
-        const result = users.find(ele => ele.id == id)
+        const result = users.find(ele => ele.id === id)
         console.log(result)
         setUser(result)
     }, [users])

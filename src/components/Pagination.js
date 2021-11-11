@@ -1,7 +1,7 @@
 import React from 'react'
 
 function Pagination(props) {
-    const { usersPerPage, totalUsers, paginate, updateUsersPerPage, prevPage, nextPage, currentPage} = props
+    const { usersPerPage, totalUsers, paginate, updateUsersPerPage, prevPage, nextPage} = props
 
     const pageNumbers = []
     for(let i=1; i<=Math.ceil(totalUsers/usersPerPage); i++){
@@ -22,7 +22,7 @@ function Pagination(props) {
                     />
             </div>
             <div className="col-md-6">
-                <nav>
+                {/* <nav>
                     <ul className="pagination">
                         <li className="page-item"  data-toggle="tab">
                             <a className="page-link" href="#" aria-label="Previous" onClick={() => prevPage()} id="prevPage">
@@ -42,7 +42,7 @@ function Pagination(props) {
                             </a>
                         </li>
                     </ul>
-                </nav>
+                </nav> */}
             </div>
             
         </div>

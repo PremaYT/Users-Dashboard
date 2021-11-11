@@ -1,7 +1,6 @@
-import React,{ useState} from 'react'
+import React from 'react'
 
-function FileUpload() {
-    const [fileData, setfileData] = useState(null)
+function FileUpload(){
 
     const handleFileChange = (e) => {
         const data = e.target.files[0]
